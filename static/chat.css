@@ -1,0 +1,159 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.chat {
+    margin-top: 50px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    height: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.msg_head {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img_cont {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+
+.img_cont img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.user_img {
+    border-radius: 50%;
+}
+
+.online_icon {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    height: 15px;
+    width: 15px;
+    background-color: #4cd137;
+    border-radius: 50%;
+    border: 1.5px solid white;
+}
+
+.user_info {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* Messages */
+.msg_card_body {
+    overflow-y: auto;
+    flex: 1;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+.msg_cotainer_send,
+.msg_cotainer {
+    max-width: 60%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    position: relative;
+    word-wrap: break-word;
+}
+
+.msg_cotainer_send {
+    background-color: #007bff;
+    color: white;
+    align-self: flex-end;
+}
+
+.msg_cotainer {
+    background-color: #ffffff;
+    color: black;
+    align-self: flex-start;
+    border: 1px solid #ddd;
+}
+
+.msg_time_send,
+.msg_time {
+    font-size: 10px;
+    position: absolute;
+    bottom: -18px;
+    right: 0;
+    color: #888;
+}
+
+.msg_time {
+    left: 0;
+    right: auto;
+}
+
+/* Input Area */
+.card-footer {
+    background-color: white;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.input-group {
+    width: 100%;
+}
+
+.type_msg {
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    padding: 10px;
+}
+
+.type_msg:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #007bff;
+}
+
+.send_btn {
+    background-color: #007bff;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    border: none;
+    padding: 0 20px;
+}
+
+.send_btn:hover {
+    background-color: #0056b3;
+}
+
+/* Avatar in message bubble */
+.img_cont_msg {
+    height: 40px;
+    width: 40px;
+    margin: 0 10px;
+}
+
+.user_img_msg {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
