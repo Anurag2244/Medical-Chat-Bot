@@ -1,0 +1,17 @@
+name: Deploy Application Docker Image to EC2 instance
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v2
+
+      - name: Say Hello
+        run: echo "✅ CI/CD workflow is running correctly!"
